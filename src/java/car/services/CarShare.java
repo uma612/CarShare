@@ -4,6 +4,9 @@
  */
 package car.services;
 
+import boundry.ReservationFacade;
+import entities.Reservation;
+import java.util.List;
 import javax.ejb.Stateless;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -15,14 +18,15 @@ import javax.jws.WebService;
 @WebService(serviceName = "CarShareWS")
 @Stateless()
 public class CarShare {
-
+    ReservationFacade reservationFacade;
     /**
      * Web service operation
      */
     @WebMethod(operationName = "getAllReservation")
     public String getAllReservation() {
         //TODO write your implementation code here:
-        return null;
+        List<Reservation> r;
+        return reservationFacade.findAll().toString(); //null;
     }
 
     /**
