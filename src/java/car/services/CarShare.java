@@ -4,16 +4,15 @@
  */
 package car.services;
 
-import javax.jws.WebService;
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
 import javax.ejb.Stateless;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 
 /**
  *
  * @author DELL
  */
-@WebService(serviceName = "CarShare")
+@WebService(serviceName = "CarShareWS")
 @Stateless()
 public class CarShare {
 
