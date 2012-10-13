@@ -25,16 +25,16 @@ public class CarShare {
     @WebMethod(operationName = "getAllReservation")
     public String getAllReservation() {
         //TODO write your implementation code here:
-        List<Reservation> r;
-        return reservationFacade.findAll().toString(); //null;
+
+        return "All reservations"; //null;
     }
 
     /**
      * Web service operation
      */
     @WebMethod(operationName = "getMemberReservation")
-    public String getMemberReservation() {
+    public String getMemberReservation(String id) {
         //TODO write your implementation code here:
-        return null;
+        return "MEmber reservations for meberid: "+id;
     }
 }

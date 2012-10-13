@@ -18,7 +18,7 @@ import javax.persistence.Query;
  */
 @Stateless
 public class ReservationFacade extends AbstractFacade<Reservation> {
-    @PersistenceContext(unitName = "CarSharePU")
+    @PersistenceContext(unitName = "CarShareWSPU")
     private EntityManager em;
 
     @Override
