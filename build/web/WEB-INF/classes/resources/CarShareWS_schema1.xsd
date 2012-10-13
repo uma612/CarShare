@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.car/" xmlns:tns="http://services.car/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getAllReservation" type="tns:getAllReservation"/>
+
+  <xs:element name="getAllReservationResponse" type="tns:getAllReservationResponse"/>
+
+  <xs:element name="getMemberReservation" type="tns:getMemberReservation"/>
+
+  <xs:element name="getMemberReservationResponse" type="tns:getMemberReservationResponse"/>
+
+  <xs:complexType name="getAllReservation">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAllReservationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberReservation">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getMemberReservationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
